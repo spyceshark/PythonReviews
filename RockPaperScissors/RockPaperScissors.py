@@ -17,8 +17,14 @@ def welcome():
     clear_screen()
     print("Welcome to Rock, Paper, Scissors!")
     print("Its time to play! Lets go!")
-    print("\n" * 6)
-    time.sleep(4)
+    print("\n" * 1)
+    print("   _______            _______                 _______")
+    print("---'   ____)      ---'   ____)_____       ---'   ____)_____")
+    print("      (_____)               _______)                _______)")
+    print("      (_____)               ________)            ___________)")
+    print("      (____)               ________)            (____)")
+    print("---.__(___)       ---.___________)        ---.__(___)")
+    time.sleep(6)
 
 
 #Converts players choice of play into a number for use in algorithm later to determine winner
