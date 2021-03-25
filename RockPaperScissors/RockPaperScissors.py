@@ -1,5 +1,6 @@
 #Inports
 import time
+import consolemenu
 
 #Variables
 continue_playing = True
@@ -25,6 +26,7 @@ def welcome():
     print("      (____)               ________)            (____)")
     print("---.__(___)       ---.___________)        ---.__(___)")
     time.sleep(6)
+
 
 
 #Converts players choice of play into a number for use in algorithm later to determine winner
@@ -128,3 +130,6 @@ while continue_playing == True:
     continue_function()
 
 clear_screen()
+
+
+
