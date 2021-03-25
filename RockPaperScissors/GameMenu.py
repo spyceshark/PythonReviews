@@ -29,7 +29,7 @@ def splash_screen():
     print("---.__(___)       ---.___________)        ---.__(___)")
     print("\n" * 2)
     
-    time.sleep(1)
+    time.sleep(5)
 
 def read_rules():
     path = os.getcwd() + "\\RockPaperScissors\\Rules"
