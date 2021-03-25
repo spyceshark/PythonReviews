@@ -12,7 +12,7 @@ score = [0,0]
 
 #Displays the score on screen
 def show_score():
-    score_string = "Current Scores:  [{0}|{1}]"
+    score_string = "Current Scores:   Player 1 [{0}|{1}] Player 2"
     return score_string.format(score[0], score[1])
 
 

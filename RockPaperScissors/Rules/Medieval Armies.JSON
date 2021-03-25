@@ -1,0 +1,8 @@
+{
+	"Skirmishers" : ["Heavy Infantry"],
+	"Heavy infantry" : ["Spearmen"],
+	"Spearmen" : ["Heavy Cavalry", "Light Cavalry"],
+	"Heavy Cavalry" : ["Archers"],
+	"Light Cavalry" : ["Archers"],
+	"Archers" : ["Skirmishers"]
+}

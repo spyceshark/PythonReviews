@@ -7,15 +7,19 @@ from RunGame import initiate_game
 def splash_screen():
     consolemenu.clear_terminal()
     print("\n" * 2)
-    print(" _    _      _                          _  ")
-    print("| |  | |    | |                        | |")
-    print("| |  | | ___| | ___ ___  _ __ ___   ___| |")
-    print("| |/\\| |/ _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\ |")
-    print("\\  /\\  /  __/ | (_| (_) | | | | | |  __/_|")
-    print(" \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___(_)")
+    print(r" _    _      _                          _  ")
+    print(r"| |  | |    | |                        | |")
+    print(r"| |  | | ___| | ___ ___  _ __ ___   ___| |")
+    print(r"| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \ |")
+    print(r"\  /\  /  __/ | (_| (_) | | | | | |  __/_|")
+    print(r" \/  \/ \___|_|\___\___/|_| |_| |_|\___(_)")
     print("\n" * 1)
-    print("Welcome to Rock, Paper, Scissors!")
-    print("Its time to play! Lets go!")
+    print(r"____________  _____            _____          _____                            ")
+    print(r"| ___ \ ___ \/  ___|   ___    /  __ \        |  __ \                           ")
+    print(r"| |_/ / |_/ /\ `--.   ( _ )   | /  \/ ___    | |  \/ __ _ _ __ ___   ___  ___  ")
+    print(r"|    /|  __/  `--. \  / _ \/\ | |    / _ \   | | __ / _` | '_ ` _ \ / _ \/ __| ")
+    print(r"| |\ \| |    /\__/ / | (_>  < | \__/\ (_) |  | |_\ \ (_| | | | | | |  __/\__ \ ")
+    print(r"\_| \_\_|    \____/   \___/\/  \____/\___(_)  \____/\__,_|_| |_| |_|\___||___/ ")
     print("\n" * 1)
     print("   _______            _______                 _______")
     print("---'   ____)      ---'   ____)_____       ---'   ____)_____")
@@ -25,7 +29,7 @@ def splash_screen():
     print("---.__(___)       ---.___________)        ---.__(___)")
     print("\n" * 2)
     
-    time.sleep(5)
+    time.sleep(1)
 
 def read_rules():
     path = os.getcwd() + "\\RockPaperScissors\\Rules"
@@ -48,6 +52,6 @@ def main_menu_start():
     menu.join()
     selection = menu.selected_option
 
-    #if bool(selection) == True:
-    initiate_game(rule_list[selection])
+    if selection < len(rule_list):
+        initiate_game(rule_list[selection])
 
